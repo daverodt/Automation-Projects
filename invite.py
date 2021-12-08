@@ -8,6 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 #Documenting my things
 #stuff
+#Commiting for the sake of commitment
 
 def get_invitees() -> pd.DataFrame:
     invitees = pd.read_csv(r'data\invitados.csv')
