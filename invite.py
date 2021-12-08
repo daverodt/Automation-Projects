@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
 #Documenting my things
+#stuff
 
 def get_invitees() -> pd.DataFrame:
     invitees = pd.read_csv(r'data\invitados.csv')
