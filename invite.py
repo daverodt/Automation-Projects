@@ -55,8 +55,10 @@ def attach_image(driver, file):
 if __name__ == '__main__':
     invitees = get_invitees()
     driver, wait = goto_web()
+    #Loops for all invitees
     for ind in invitees.index:
         something = invitees.loc[ind]
         send_message(invitees.loc[ind], driver, wait)
+        #Random snooze to make it more human and less censorship prone for whatsapp
         snooze = randint(300, 600) / 100
         time.sleep(snooze)
